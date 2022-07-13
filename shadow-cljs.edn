@@ -1,0 +1,14 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src/dev"
+  "src/main"
+  "src/test"]
+
+ :dependencies
+ [[tick/tick "0.5.0-RC5"]]
+
+ :builds 
+ {:app {:target :browser
+        :output-dir "public/assets/app/js"
+        :asset-path "/assets/app/js"
+        :modules {:main {:entries [app]}}}}}
